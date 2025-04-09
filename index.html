@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delish Bistro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo">Delish Bistro</h1>
+            <nav>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+                <ul id="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Delish Bistro</h2>
+            <p>Where flavor meets elegance. Open daily from 11 AM to 11 PM.</p>
+            <a href="#menu" class="btn">View Menu</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Delish Bistro is a family-owned restaurant offering modern twists on classic dishes. With fresh ingredients and a cozy atmosphere, we invite you to dine with us for an unforgettable experience.</p>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <ul>
+                <li><strong>Grilled Salmon</strong> - $18</li>
+                <li><strong>Margherita Pizza</strong> - $14</li>
+                <li><strong>Caesar Salad</strong> - $10</li>
+                <li><strong>Chocolate Lava Cake</strong> - $8</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2>Make a Reservation</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="date" required />
+                <input type="time" required />
+                <input type="number" min="1" max="20" placeholder="Number of Guests" required />
+                <button type="submit">Reserve Now</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Delish Bistro | Designed with ??</p>
+        </div>
+    </footer>
+
+    <script>
+    // Responsive nav toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    </script>
+</body>
+</html>
